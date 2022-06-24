@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #02021b;
+    color: #8c1c31;
+    font-family: helvetica;
+}
+
+.fp-watermark {
+    display: none;
+}
+
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    background: white;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: rgb(190, 190, 190);
+}
+
+@keyframes title {
+    0% {
+        background-position: -50% 0%;
+    }
+    
+    50% {
+        background-position: -100% 0%;
+    }
+
+    100% {
+        background-position: -250% 0%;
+    }
+}
+
+.haosweb {
+    position: absolute;
+    top: 15%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 99;
+    font-size: 30px;
+}
+
+.haosweb h1 {
+    box-shadow: 0 0 10px 10px black;
+    user-select: none;
+}
+
+.s1 .line {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+    .haosweb {
+        top: 8%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .haosweb {
+        color: white;
+        top: 18%;
+        font-size: 24px;
+    }
+}
+
+.section {
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+.title {
+    text-align: center;
+}
+
+.img-background {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    object-fit: contain;
+}
+
+.beelzebub {
+    position: absolute;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+@media screen and (max-width: 1920px) {
+    .img-background {
+        width: 55%;
+    }
+
+    .beelzebub {
+        width: 10%;
+        top: 47%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .img-background {
+        width: 100%;
+    }
+
+    .beelzebub {
+        width: 20%;
+        top: 47%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .img-background {
+        top: 75%;
+    }
+
+    .beelzebub {
+        width: 20%;
+        top: 73%;
+    }
+}
+
+.content {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: -50% 0%;
+    }
+    
+    50% {
+        background-position: -100% 0%;
+    }
+
+    100% {
+        background-position: -250% 0%;
+    }
+}
+
+.line {
+    background: linear-gradient(120deg, rgba(112, 12, 41, 1) 12%, rgba(140, 28, 49, 1) 20%, rgba(170, 47, 60, 1) 30%, rgba(140, 28, 49, 1) 40%, rgba(112, 12, 41, 1) 58%);
+    background-size: 200% 200%;
+    margin: 12px auto 17px auto;
+    animation: gradient 3s Linear infinite;
+    width: 65%;
+    height: 5px;
+}

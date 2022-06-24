@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hao's Website</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="/node_modules/fullpage.js/dist/fullpage.min.js"></script>
+    <script src="/node_modules/fullpage.js/dist/fullpage.js"></script>
+    <link rel="stylesheet" href="/node_modules/fullpage.js/dist/fullpage.css" />
+    <link rel="stylesheet" href="/node_modules/fullpage.js/dist/fullpage.min.css" />
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section s1">
+            <div class="haosweb"><h1>Hao's Website</h1></div>
+            <div class="line"></div>
+            <img class="beelzebub" src="/img/dancing.gif" alt="">
+            <img class="img-background" src="/img/background.png" alt="">
+        </div>
+        <div class="section s2">
+            <div class="content">
+                <h3 class="title">ABOUT ME</h3>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="section">
+            <video width="400" height="200" controls autoplay data-autoplay>
+                <source src=
+    "https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.mp4"
+                        type="video/mp4">
+                <source src=
+    "https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.ogg"
+                        type="video/ogg">
+            </video>
+        </div>
+        <div class="section">Some section</div>
+    </div>
+
+    
+
+    <script>
+        new fullpage('#fullpage', {
+            autoScrolling: true,
+            dragAndMove: true,
+            fitToSection: true,
+            // Navigation bar custom
+            navigation: true,
+            navigationPosition: 'right',
+            menu: '#menu',
+            responsiveSlides: true,
+            afterRender: function() {
+                $('video').get(0).play();      
+            }
+        })
+    </script>
+</body>
+
+</html>
