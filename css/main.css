@@ -55,7 +55,7 @@ body {
     height: 5px;
 }
 
-/* wuzza sun */
+/* wuzza moon */
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -68,11 +68,11 @@ body {
 
 /* background of the first page */
 .left-bg {
-    width: 35%;
+    width: 45%;
 }
 
 .right-bg {
-    width: 65%;
+    width: 55%;
     height: 100vh;
 }
 
