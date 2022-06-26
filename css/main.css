@@ -1,32 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #02021b;
-    color: #8c1c31;
+    background-color: #071520;
+    color: white;
     font-family: helvetica;
-}
-
-.fp-watermark {
-    display: none;
-}
-
-#fp-nav ul li a.active span,
-#fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li a.active span,
-.fp-slidesNav ul li:hover a.active span {
-    background: white;
-}
-
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-    background: rgb(190, 190, 190);
 }
 
 @keyframes title {
     0% {
         background-position: -50% 0%;
     }
-    
+
     50% {
         background-position: -100% 0%;
     }
@@ -36,99 +20,9 @@ body {
     }
 }
 
-.haosweb {
-    position: absolute;
-    top: 15%;
-    left: 50%;  
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 99;
-    font-size: 30px;
-}
-
-.haosweb h1 {
-    box-shadow: 0 0 10px 10px black;
-    user-select: none;
-}
-
-.s1 .line {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@media screen and (min-width: 768px) {
-    .haosweb {
-        top: 8%;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    .haosweb {
-        color: white;
-        top: 18%;
-        font-size: 24px;
-    }
-}
-
 .section {
     height: 100vh !important;
     width: 100vw !important;
-}
-
-.title {
-    text-align: center;
-}
-
-.img-background {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    object-fit: contain;
-}
-
-.beelzebub {
-    position: absolute;
-    left: 50%;
-    top: 42%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
-
-@media screen and (max-width: 1920px) {
-    .img-background {
-        width: 55%;
-    }
-
-    .beelzebub {
-        width: 10%;
-        top: 47%;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .img-background {
-        width: 100%;
-    }
-
-    .beelzebub {
-        width: 20%;
-        top: 47%;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .img-background {
-        top: 75%;
-    }
-
-    .beelzebub {
-        width: 20%;
-        top: 73%;
-    }
 }
 
 .content {
@@ -142,7 +36,7 @@ body {
     0% {
         background-position: -50% 0%;
     }
-    
+
     50% {
         background-position: -100% 0%;
     }
@@ -159,4 +53,57 @@ body {
     animation: gradient 3s Linear infinite;
     width: 65%;
     height: 5px;
+}
+
+/* wuzza sun */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* background of the first page */
+.left-bg {
+    width: 35%;
+}
+
+.right-bg {
+    width: 65%;
+    height: 100vh;
+}
+
+.moonlight-1,
+.moonlight-2 {
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 100%;
+}
+
+.moonlight-1 {
+    width: 500px;
+    height: 500px;
+    background-color: #14222d;
+}
+
+.moonlight-2 {
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    background-color: #1f2d36;
+    position: relative;
+}
+
+.moon {
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    animation: rotate 15s linear infinite;
+    top: 13%;
+    left: 13%;
 }

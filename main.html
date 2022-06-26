@@ -9,39 +9,47 @@
     <script src="jquery-3.6.0.min.js"></script>
     <script src="/node_modules/fullpage.js/dist/fullpage.min.js"></script>
     <script src="/node_modules/fullpage.js/dist/fullpage.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/node_modules/fullpage.js/dist/fullpage.css" />
     <link rel="stylesheet" href="/node_modules/fullpage.js/dist/fullpage.min.css" />
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/fp.css">
 </head>
 
 <body>
     <div id="fullpage">
         <div class="section s1">
-            <div class="haosweb"><h1>Hao's Website</h1></div>
-            <div class="line"></div>
-            <img class="beelzebub" src="/img/dancing.gif" alt="">
-            <img class="img-background" src="/img/background.png" alt="">
+            <div class="row align-items-center justify-content-center m-0 p-0">
+                <div class="left-bg"></div>
+                <div class="right-bg d-flex justify-content-center align-items-center">
+                    <div class="moonlight-1 d-flex justify-content-center align-items-center">
+                        <div class="moonlight-2">
+                            <img class="moon" src="/img/moon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="section s2">
             <div class="content">
-                <h3 class="title">ABOUT ME</h3>
                 <div class="line"></div>
             </div>
         </div>
         <div class="section">
-            <video width="400" height="200" controls autoplay data-autoplay>
+            <!-- <video width="400" height="200" controls autoplay data-autoplay>
                 <source src=
     "https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.mp4"
                         type="video/mp4">
                 <source src=
     "https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.ogg"
                         type="video/ogg">
-            </video>
+            </video> -->
         </div>
         <div class="section">Some section</div>
     </div>
 
-    
+
 
     <script>
         new fullpage('#fullpage', {
@@ -50,11 +58,11 @@
             fitToSection: true,
             // Navigation bar custom
             navigation: true,
-            navigationPosition: 'right',
+            navigationPosition: 'left',
             menu: '#menu',
             responsiveSlides: true,
-            afterRender: function() {
-                $('video').get(0).play();      
+            afterRender: function () {
+                $('video').get(0).play();
             }
         })
     </script>
