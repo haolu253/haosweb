@@ -3,7 +3,7 @@ body {
     padding: 0;
     background-color: #071520;
     color: white;
-    font-family: helvetica;
+    font-family: 'NexaRegular';
 }
 
 @keyframes title {
