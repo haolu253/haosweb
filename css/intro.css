@@ -1,255 +1,38 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #071520;
-    color: white;
-    font-family: 'NexaRegular';
+.s1 {
+    background-color: red;
+}
+.s2 {
+    background-color: blue;
+}
+.s3 {
+    background-color: green;
+}
+.s4 {
+    background-color: yellow;
+}
+.s5 {
+    background-color: purple;
 }
 
-@keyframes title {
-    0% {
-        background-position: -50% 0%;
-    }
-
-    50% {
-        background-position: -100% 0%;
-    }
-
-    100% {
-        background-position: -250% 0%;
-    }
+.horizontal-content {
+    transform: rotate(-90deg);
+    width: 100vh;
+    height: 100vw;
 }
 
 .section {
-    height: 100vh !important;
-    width: 100vw !important;
+    width: 100vh;
+    height: 100vw;
 }
 
-.content {
-    width: 90%;
-    height: 90%;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.1);
+.section-content {
+    position: absolute;
+    top: 32.5%;
+    right: -5%;
+    transform: rotate(90deg);
+    text-align: center;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: -50% 0%;
-    }
-
-    50% {
-        background-position: -100% 0%;
-    }
-
-    100% {
-        background-position: -250% 0%;
-    }
-}
-
-.line {
-    background: linear-gradient(120deg, rgba(32, 117, 103, 1) 12%, rgba(78, 156, 129, 1) 20%, rgba(141, 195, 167, 1) 30%, rgba(78, 156, 129, 1) 40%, rgba(32, 117, 103, 1) 58%);
-    background-size: 200% 200%;
-    margin: 12px auto 17px auto;
-    animation: gradient 3s Linear infinite;
-    width: 65%;
-    height: 5px;
-}
-
-/* wuzza moon */
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes move-first {
-    0% {
-        left: 0;
-    }
-
-    50% {
-        left: -15%;
-    }
-
-    100% {
-        left: 0;
-    }
-}
-
-@keyframes move-second {
-    0% {
-        left: 65%;
-    }
-
-    50% {
-        left: 45%;
-    }
-
-    100% {
-        left: 65%;
-    }
-}
-
-@keyframes move-third {
-    0% {
-        left: 0;
-    }
-
-    50% {
-        left: -20%;
-    }
-
-    100% {
-        left: 0;
-    }
-}
-
-/* background of the first page */
-.left-bg {
-    width: 35%;
-}
-
-.right-bg {
-    width: 65%;
-    height: 100vh;
-}
-
-@media screen and (max-width: 1024px) {
-    .left-bg {
-        display: none;
-    }
-
-    .right-bg {
-        width: 100%;
-        height: 100vh;
-    }
-}
-
-.moonlight-1,
-.moonlight-2 {
-    max-width: 600px;
-    max-height: 600px;
-    border-radius: 100%;
-}
-
-.moonlight-1 {
-    width: 500px;
-    height: 500px;
-    background-color: #14222d;
-}
-
-.moonlight-2 {
-    width: 400px;
-    height: 400px;
-    z-index: 1;
-    background-color: #1f2d36;
-    position: relative;
-}
-
-.moon {
-    max-width: 300px;
-    max-height: 300px;
+img {
     width: 100%;
-    position: absolute;
-    z-index: 2;
-    animation: rotate 15s linear infinite;
-    top: 13%;
-    left: 13%;
-}
-
-.cloud-1 {
-    animation: move-first 5s linear infinite;
-    position: absolute;
-}
-
-.cloud-2 {
-    animation: move-second 6s linear infinite;
-    position: absolute;
-    top: -15%;
-}
-
-.cloud-3 {
-    animation: move-third 8s linear infinite;
-    position: absolute;
-    bottom: 0;
-    z-index: 5;
-}
-
-@media screen and (max-width: 767px) {
-    .moonlight-1,
-    .moonlight-2 {
-        max-width: 500px;
-        max-height: 500px;
-        border-radius: 100%;
-    }
-
-    .moonlight-1 {
-        width: 300px;
-        height: 300px;
-    }
-
-    .moonlight-2 {
-        width: 250px;
-        height: 250px;
-    }
-
-    .moon {
-        max-width: 200px;
-        max-height: 200px;
-        left: 10%;
-        top: 10%;
-    }
-
-    .cloud-1 {
-        width: 200px;
-        height: 50px;
-    }
-
-    .cloud-2 {
-        top: -10%;
-        width: 60px;
-        height: 25px;
-    }
-
-    .cloud-3 {
-        width: 300px;
-        height: 60px;
-    }
-}
-
-.left-bg>h2 {
-    font-weight: bold;
-    font-size: 70px;
-}
-
-.left-bg>h1 {
-    font-weight: bold;
-    margin-left: 30%;
-    font-size: 100px;
-}
-
-.left-bg>.line {
-    width: 65%;
-}
-
-.left-bg>h2, .line, h3, h4 {
-    margin-left: 20%;
-}
-
-@media screen and (max-width: 1440px) {
-    .left-bg>h2 {
-        font-size: 50px;
-    }
-    
-    .left-bg>h1 {
-        font-size: 70px;
-    }
-}
-
-.right-bg>h1 {
-    margin-bottom: 10%;
 }

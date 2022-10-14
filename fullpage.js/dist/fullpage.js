@@ -3402,7 +3402,8 @@
 
 
     function getDestinationPosition(element) {
-      var elementHeight = element.offsetHeight;
+      /// change to scroll horizontal - Hao
+      var elementHeight = element.offsetWidth;
       var elementTop = element.offsetTop; //top of the desination will be at the top of the viewport
 
       var position = elementTop;
