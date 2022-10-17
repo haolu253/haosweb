@@ -6,10 +6,20 @@
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li a.active span,
 .fp-slidesNav ul li:hover a.active span {
-    background: white;
+    background: #1D3557;
 }
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    background: rgb(190, 190, 190);
+    background: #1D35577a;
+}
+
+@media screen and (min-width: 1025px) {
+    #fp-nav {
+        left: 94% !important;
+        position: fixed;
+        z-index: 100;
+        top: 90%;
+        transform: rotate(270deg);
+    }
 }
