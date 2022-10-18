@@ -1,4 +1,4 @@
-$('#fullpage').fullpage({
+new fullpage('#fullpage', {
     autoScrolling: true,
     dragAndMove: true,
     fitToSection: true,
