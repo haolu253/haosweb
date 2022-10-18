@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    new fullpage('#fullpage', {
+    $('#fullpage').fullpage({
         autoScrolling: true,
         dragAndMove: true,
         fitToSection: true,
