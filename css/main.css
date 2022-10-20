@@ -1,7 +1,5 @@
 @import url(/css/fonts.css);
 
-.s1 {}
-
 .s2 {
     background-color: blue;
 }
@@ -25,15 +23,47 @@
 
 @media screen and (min-width: 1025px) {
     .side-content {
-        position: absolute;
-        width: 30vw;
+        position: fixed;
+        width: 15vw;
         height: 100vh;
-        background-color: #1D3557;
         z-index: 99;
-        color: white;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-right: 1px solid #c8c8c8;
+        background-color: white;
+    }
+
+    .nav-a {
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        margin: 2px 0;
+        padding: 10px 0;
+        color: white;
+    }
+
+    .nav-a:last-child {
+        margin-bottom: 0;
+    }
+
+    .nav-a:hover {
+        transition: .5s;
+        text-decoration: none;
+        color: #0E86D4;
+    }
+
+    .side-line {
+        position: absolute;
+        transform: rotate(90deg);
+        height: 16.7vw;
+        width: 80px;
+        text-align: center;
+        background-color: white;
+        top: -5%;
+        user-select: none;
+        font-weight: bold;
+        font-size: 12px;
     }
 
     .name {
@@ -56,10 +86,10 @@
         position: absolute;
         display: flex;
         width: 100vw;
-        padding-left: 75%;
+        padding-left: 48%;
         padding-top: 8%;
         height: 100vh;
-        top: 50%;
+        top: 55%;
         left: 100%;
         transform-origin: top left;
         transform: rotate(90deg) translateX(-100vh);
@@ -72,5 +102,20 @@
 
 .section {
     height: calc(var(100, 1vh) * 100);
-    ;
+}
+
+@media screen and (min-width:1281px) {
+    .section-content {
+        top: 50%;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .section-content {
+        top: 46%;
+    }
+
+    .side-line {
+        height: 16.2vw;
+    }
 }

@@ -6,12 +6,12 @@
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li a.active span,
 .fp-slidesNav ul li:hover a.active span {
-    background: #1D3557;
+    background: #000000;
 }
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    background: #1D35577a;
+    background: #0000009d;
 }
 
 @media screen and (min-width: 1025px) {
