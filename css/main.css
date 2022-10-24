@@ -41,6 +41,9 @@
         margin: 2px 0;
         padding: 10px 0;
         color: white;
+        user-select: none;
+        font-weight: bold;
+        font-size: 13px;
     }
 
     .nav-a:last-child {
@@ -93,6 +96,7 @@
         left: 100%;
         transform-origin: top left;
         transform: rotate(90deg) translateX(-100vh);
+        font-size: 13px;
     }
 
     img {
