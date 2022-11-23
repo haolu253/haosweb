@@ -20,7 +20,7 @@ body {
 
 .load-rotate {
     animation-name: load-rotate;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 @keyframes load-rotate {
@@ -35,7 +35,7 @@ body {
 
 .load-right {
     animation-name: load-right;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 @keyframes load-right {
@@ -50,7 +50,7 @@ body {
 
 .load-left {
     animation-name: load-left;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 @keyframes load-left {
