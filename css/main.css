@@ -263,7 +263,7 @@ body {
 .test-dvh,
 .test-dvh2,
 .test-dvh3 {
-    height: 100dvh;
+    height: 100svh;
 }
 
 .test-dvh,
