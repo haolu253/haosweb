@@ -107,3 +107,19 @@ body {
         height: 100%;
     }
 }
+
+.hover-noeff {
+    animation: hover-noeff;
+    animation-duration: .8s;
+    transition: .3s;
+}
+
+@keyframes hover-noeff {
+    from {
+        height: 100%;
+    }
+
+    to {
+        height: 0%;
+    }
+}
