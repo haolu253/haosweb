@@ -12,8 +12,10 @@ $(document).ready(function () {
     $('.float-menu').on('click', function () {
         if($(this).hasClass('is-active')) {
             $(this).removeClass('is-active');
+            $('.small-menu').removeClass('is-active')
         } else {
             $(this).addClass('is-active');
+            $('.small-menu').addClass('is-active')
         }
     })
 })
