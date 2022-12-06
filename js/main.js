@@ -8,4 +8,12 @@ $(document).ready(function () {
         var hoverEff = $(this).find('.menu-hover');
         hoverEff.removeClass('hover-eff').addClass('hover-noeff').css('height', '0%');
     });
+
+    $('.float-menu').on('click', function () {
+        if($(this).hasClass('is-active')) {
+            $(this).removeClass('is-active');
+        } else {
+            $(this).addClass('is-active');
+        }
+    })
 })
