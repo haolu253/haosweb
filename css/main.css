@@ -1,9 +1,24 @@
+@import url(../css/swiper.css);
+@import url(../css/firework.css);
+
+:root {
+    --black: #0f111d;
+    --black-70: #0f111d70;
+    --black-40: #0f111d40;
+
+    --white: #ffffff;
+
+    --main-color: #183DC7;
+    --sub-color: #001F4E;
+}
+
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
     background-image: url(../img/background-body.jpg);
+    overflow: hidden;
 }
 
 .web-logo {
@@ -17,14 +32,14 @@ body {
 }
 
 .web-header {
-    background: #0f111d;
+    background: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .web-header>div:nth-of-type(1) {
-    color: #67EEB0;
+    color: var(--black);
 }
 
 .web-header>div:nth-of-type(1) .menu-hover {
@@ -71,7 +86,7 @@ body {
 .menu-item {
     width: 150px;
     height: 60px;
-    color: white;
+    color: var(--white);
     position: relative;
     cursor: pointer;
 }
@@ -146,7 +161,7 @@ body {
 }
 
 .float-menu {
-    background-color: white;
+    background-color: var(--white);
     box-shadow: 0 0 5px;
     display: flex;
     flex-direction: column;
@@ -156,16 +171,16 @@ body {
 .float-menu .line {
     width: 30px;
     height: 3px;
-    background-color: #0f111d70;
+    background-color: var(--main-color);
     border-radius: 100px;
 }
 
 .float-menu.is-active {
-    background-color: #0f111d40;
+    background-color: var(--black-40);
 }
 
 .float-menu.is-active .line {
-    background-color: white;
+    background-color: var(--white);
 }
 
 .float-menu.is-active .line:nth-child(1) {
@@ -196,19 +211,19 @@ body {
 }
 
 .float-scroll {
-    background-color: #0f111d40;
+    background-color: var(--black-40);
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
 .float-scroll:hover {
-    background-color: #0f111d;
+    background-color: var(--black);
 }
 
 .float-scroll .line {
     height: 3px;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 100px;
 }
 
@@ -234,7 +249,7 @@ body {
 .small-menu {
     width: 158px;
     height: 178px;
-    background-color: red;
+    background-color: var(--main-color);
     visibility: hidden;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -268,4 +283,23 @@ body {
     to {
         transform: scale(1);
     }
+}
+
+.small-menu div {
+    height: calc(178px/3);
+}
+
+.small-menu div:hover {
+    background-color: var(--sub-color);
+    transition: .2s; 
+}
+
+.small-menu div:first-child {
+    border-bottom: 1.5px solid var(--white);
+    border-radius: 10px 10px 0 0;
+}
+
+.small-menu div:last-child {
+    border-top: 1.5px solid var(--white);
+    border-radius: 0 0 10px 10px;
 }
