@@ -17,8 +17,7 @@
     color: var(--viva-magenta);
 }
 
-.content,
-.half-bg-content {
+.content {
     width: 100%;
     height: 100vh;
 }
@@ -27,7 +26,7 @@
     background-color: var(--background);
 }
 
-.half-bg-content {
+.bg-50 {
     background: linear-gradient(var(--background) 50%, var(--black) 50%);
 }
 
@@ -86,4 +85,8 @@ h1 {
 
 .half-bg-content h2 {
     border-bottom: 2px solid var(--viva-magenta);
+}
+
+.bg-60 {
+    background: linear-gradient(to right, var(--background) 60%, var(--viva-magenta) 40%);
 }
