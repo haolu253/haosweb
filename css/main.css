@@ -1,5 +1,6 @@
 :root {
     --viva-magenta: #BB2649;
+    --viva-magenta-light: #DF617F;
     --pure-black: #030303;
     --background: #1A1A1A;
     --light-black: #4D4D4D;
@@ -9,25 +10,56 @@
 
 * {
     color: var(--white);
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     user-select: none;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--light-black);
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--viva-magenta);
+    box-shadow: inset 0 0 6px #0000004d;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--light-black);
+    box-shadow: inset 0 0 6px #0000004d;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: var(--light-black);
 }
 
 .colored-text {
     color: var(--viva-magenta);
 }
 
-.content {
-    width: 100%;
-    height: 100vh;
+.bg-pure {
+    background-color: var(--pure-black);
+}
+
+.bg-normal {
+    background-color: var(--background);
+}
+
+.bg-60 {
+    background: linear-gradient(to right, var(--background) 60%, var(--viva-magenta) 40%);
+}
+
+.text-highlight {
+    border-bottom: 2px solid var(--viva-magenta);
 }
 
 .content {
     background-color: var(--background);
 }
 
-.bg-50 {
-    background: linear-gradient(var(--background) 50%, var(--black) 50%);
+.fullscreen {
+    width: 100%;
+    height: 100vh;
 }
 
 .box-content {
@@ -70,23 +102,34 @@ h1 {
 }
 
 .box {
-    background-color: var(--viva-magenta);
     width: 270px;
     height: 270px;
+    cursor: pointer;
+}
+
+.box.type-1 {
+    background-color: var(--viva-magenta);
+}
+
+.box.type-1:hover {
+    transition: .5s;
+    background-color: var(--viva-magenta-light);
+}
+
+.box.type-1:hover p, 
+.box.type-1:hover i {
+    color: var(--background);
 }
 
 .box.type-2 {
     background-color: var(--background);
 }
 
+.box.type-2:hover {
+    transition: .5s;
+    background-color: var(--light-black);
+}
+
 .box i {
     font-size: 60px;
-}
-
-.half-bg-content h2 {
-    border-bottom: 2px solid var(--viva-magenta);
-}
-
-.bg-60 {
-    background: linear-gradient(to right, var(--background) 60%, var(--viva-magenta) 40%);
 }
