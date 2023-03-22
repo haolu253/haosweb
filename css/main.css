@@ -1,6 +1,6 @@
 :root {
-    --viva-magenta: #BB2649;
-    --viva-magenta-light: #DF617F;
+    --main-color: #2849F6;
+    --sub-color: #F86D53;
     --pure-black: #030303;
     --background: #1A1A1A;
     --light-black: #4D4D4D;
@@ -14,13 +14,32 @@
     user-select: none;
 }
 
+@keyframes bouncing {
+    from,
+    to {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+
+    75% {
+        transform: scale(0.95, 1.05);
+    }
+}
+
 ::-webkit-scrollbar {
     background-color: var(--light-black);
     width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--viva-magenta);
+    background-color: var(--main-color);
     box-shadow: inset 0 0 6px #0000004d;
 }
 
@@ -34,7 +53,7 @@
 }
 
 .colored-text {
-    color: var(--viva-magenta);
+    color: var(--main-color);
 }
 
 .bg-pure {
@@ -46,11 +65,11 @@
 }
 
 .bg-60 {
-    background: linear-gradient(to right, var(--background) 60%, var(--viva-magenta) 40%);
+    background: linear-gradient(to right, var(--background) 60%, var(--main-color) 40%);
 }
 
 .text-highlight {
-    border-bottom: 2px solid var(--viva-magenta);
+    border-bottom: 2px solid var(--main-color);
 }
 
 .content {
@@ -68,6 +87,7 @@
     background-color: var(--pure-black);
     text-align: center;
     padding: 5vw;
+    border-radius: 16px;
 }
 
 .box-content h1 {
@@ -89,7 +109,7 @@
 }
 
 .contact-info svg:hover path {
-    color: var(--viva-magenta);
+    color: var(--main-color);
     transition: .5s;
 }
 
@@ -108,17 +128,25 @@ h1 {
 }
 
 .box.type-1 {
-    background-color: var(--viva-magenta);
+    background-color: var(--main-color);
+    border-radius: 16px;
 }
 
 .box.type-1:hover {
     transition: .5s;
-    background-color: var(--viva-magenta-light);
+    filter: brightness(1.2);
+    background-color: var(--sub-color)
 }
 
-.box.type-1:hover p, 
 .box.type-1:hover i {
+    animation: bouncing 0.5s .3s; 
+}
+
+.box.type-1 p,
+.box.type-1 i {
     color: var(--background);
+    font-weight: bold;
+    transition: .5s;
 }
 
 .box.type-2 {
