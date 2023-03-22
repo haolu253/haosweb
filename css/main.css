@@ -1,6 +1,6 @@
 :root {
-    --main-color: #2849F6;
-    --sub-color: #F86D53;
+    --main-color: #F86D53;
+    --sub-color: #2849F6;
     --pure-black: #030303;
     --background: #1A1A1A;
     --light-black: #4D4D4D;
@@ -74,6 +74,10 @@
 
 .content {
     background-color: var(--background);
+    background-image: linear-gradient(to right, white, white), linear-gradient(white, white), linear-gradient(white, white);
+    background-repeat: no-repeat;
+    background-position: center bottom 30px, center bottom 15px, center bottom;
+    background-size: 80% 1px, 60% 1px, 40% 1px;
 }
 
 .fullscreen {
@@ -111,6 +115,10 @@
 .contact-info svg:hover path {
     color: var(--main-color);
     transition: .5s;
+}
+
+.contact-info svg:hover {
+    animation: bouncing 0.5s .3s;
 }
 
 h1 {
