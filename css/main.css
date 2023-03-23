@@ -1,6 +1,6 @@
 :root {
     --main-color: #F86D53;
-    --sub-color: #2849F6;
+    --sub-color: #538CF8;
     --pure-black: #030303;
     --background: #1A1A1A;
     --light-black: #4D4D4D;
@@ -12,6 +12,10 @@
     color: var(--white);
     font-family: 'Montserrat', sans-serif;
     user-select: none;
+}
+
+body {
+    padding: 0 !important;
 }
 
 @keyframes bouncing {
@@ -74,15 +78,15 @@
 
 .content {
     background-color: var(--background);
-    background-image: linear-gradient(to right, white, white), linear-gradient(white, white), linear-gradient(white, white);
-    background-repeat: no-repeat;
-    background-position: center bottom 30px, center bottom 15px, center bottom;
-    background-size: 80% 1px, 60% 1px, 40% 1px;
 }
 
 .fullscreen {
     width: 100%;
     height: 100vh;
+    background-image: linear-gradient(white, white), linear-gradient(white, white);
+    background-repeat: no-repeat;
+    background-position: center right 12%, center right 10%;
+    background-size: 15px 100%, 15px 100%;
 }
 
 .box-content {
@@ -90,8 +94,13 @@
     height: 70%;
     background-color: var(--pure-black);
     text-align: center;
-    padding: 5vw;
+    padding: 0 5vw;
     border-radius: 16px;
+}
+
+.box-content img {
+    width: 80px;
+    height: 80px;
 }
 
 .box-content h1 {
@@ -132,27 +141,29 @@ h1 {
 .box {
     width: 270px;
     height: 270px;
-    cursor: pointer;
 }
 
 .box.type-1 {
-    background-color: var(--main-color);
+    background-color: var(--light-black);
     border-radius: 16px;
+    border: 3px solid transparent;
 }
 
 .box.type-1:hover {
     transition: .5s;
     filter: brightness(1.2);
-    background-color: var(--sub-color)
+    border-color: var(--main-color);
 }
 
-.box.type-1:hover i {
-    animation: bouncing 0.5s .3s; 
+.box.type-1:hover i,
+.box.type-1:hover p {
+    animation: bouncing 0.5s .3s;
+    color: var(--main-color);
 }
 
 .box.type-1 p,
 .box.type-1 i {
-    color: var(--background);
+    color: var(--white);
     font-weight: bold;
     transition: .5s;
 }
