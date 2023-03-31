@@ -30,8 +30,8 @@
 
 @font-face {
     font-family: 'Satoshi';
-    src: url('./font/Satoshi-Regular.woff2') format('woff2'),
-        url('./font/Satoshi-Regular.woff') format('woff');
+    src: url('../font/Satoshi-Regular.woff2') format('woff2'),
+        url('../font/Satoshi-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -48,24 +48,30 @@
 
 h1 {
     font-size: 64px !important;
+    font-family: 'Satoshi Bold';
 }
 
 h2 {
     font-size: 48px !important;
+    font-family: 'Satoshi Bold';
 }
 
 h3 {
     font-size: 40px !important;
+    font-family: 'Satoshi Bold';
 }
 
 h4 {
     font-size: 32px !important;
+    font-family: 'Satoshi Bold';
 }
 
 h5 {
     font-size: 24px !important;
+    font-family: 'Satoshi Bold';
 }
 
 h6 {
     font-size: 16px !important;
+    font-family: 'Satoshi Bold';
 }
