@@ -1,182 +1,79 @@
 :root {
-    --main-color: #F86D53;
-    --sub-color: #538CF8;
-    --pure-black: #030303;
-    --background: #1A1A1A;
-    --light-black: #4D4D4D;
-    --black: #333333;
-    --white: #FEFEFE;
+    --primary-color-20: #00344D;
+    --primary-color-30: #004C6E;
+    --primary-color-80: #89CEFF;
+    --primary-color-90: #C9E6FF;
+
+    --secondary-color-20: #21323F;
+    --secondary-color-30: #384956;
+    --secondary-color-80: #B7C9D9;
+    --secondary-color-90: #D3E5F5;
+
+    --tertiary-color-20: #352B4B;
+    --tertiary-color-30: #4C4163;
+    --tertiary-color-80: #CEC0E8;
+    --tertiary-color-90: #EADDFF;
+
+    --surface-color: #191C1E;
+    --surface-color-1: #1F2529;
+    --surface-color-2: #222A30;
+    --surface-color-3: #253037;
+    --surface-color-4: #263139;
+    --surface-color-5: #29353E;
+
+    --surface-variant-30: #41474D;
+    --surface-variant-80: #C1C7CE;
+
+    --outline-color: #8B9198;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/font/Satoshi-Regular.woff2') format('woff2'),
+        url('/font/Satoshi-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 * {
-    color: var(--white);
-    font-family: 'Montserrat', sans-serif;
-    user-select: none;
+    font-family: 'Satoshi';
+}
+
+h1 {
+    font-size: 64px !important;
+}
+
+h2 {
+    font-size: 48px !important;
+}
+
+h3 {
+    font-size: 40px !important;
+}
+
+h4 {
+    font-size: 32px !important;
+}
+
+h5 {
+    font-size: 24px !important;
+}
+
+h6 {
+    font-size: 16px !important;
 }
 
 body {
     padding: 0 !important;
 }
 
-@keyframes bouncing {
-    from,
-    to {
-        transform: scale(1, 1);
-    }
-
-    25% {
-        transform: scale(0.9, 1.1);
-    }
-
-    50% {
-        transform: scale(1.1, 0.9);
-    }
-
-    75% {
-        transform: scale(0.95, 1.05);
-    }
+.web-page {
+    background-color: var(--surface-color);
+    color: var(--surface-variant-80);
 }
 
-::-webkit-scrollbar {
-    background-color: var(--light-black);
-    width: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
-    box-shadow: inset 0 0 6px #0000004d;
-}
-
-::-webkit-scrollbar-track {
-    background-color: var(--light-black);
-    box-shadow: inset 0 0 6px #0000004d;
-}
-
-::-webkit-scrollbar-track-piece {
-    background-color: var(--light-black);
-}
-
-.colored-text {
-    color: var(--main-color);
-}
-
-.bg-pure {
-    background-color: var(--pure-black);
-}
-
-.bg-normal {
-    background-color: var(--background);
-}
-
-.bg-60 {
-    background: linear-gradient(to right, var(--background) 60%, var(--main-color) 40%);
-}
-
-.text-highlight {
-    border-bottom: 2px solid var(--main-color);
-}
-
-.content {
-    background-color: var(--background);
-}
-
-.fullscreen {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(white, white), linear-gradient(white, white);
-    background-repeat: no-repeat;
-    background-position: center right 12%, center right 10%;
-    background-size: 15px 100%, 15px 100%;
-}
-
-.box-content {
-    width: 60%;
-    height: 70%;
-    background-color: var(--pure-black);
+.contact-title {
+    padding: 56px;
     text-align: center;
-    padding: 0 5vw;
-    border-radius: 16px;
-}
-
-.box-content img {
-    width: 80px;
-    height: 80px;
-}
-
-.box-content h1 {
-    letter-spacing: 10px;
-}
-
-.box-content p {
-    letter-spacing: 5px;
-}
-
-.contact-info {
-    gap: 20px;
-}
-
-.contact-info svg {
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-}
-
-.contact-info svg:hover path {
-    color: var(--main-color);
-    transition: .5s;
-}
-
-.contact-info svg:hover {
-    animation: bouncing 0.5s .3s;
-}
-
-h1 {
-    font-weight: bold;
-}
-
-.boxset {
-    gap: 2vw;
-}
-
-.box {
-    width: 270px;
-    height: 270px;
-}
-
-.box.type-1 {
-    background-color: var(--light-black);
-    border-radius: 16px;
-    border: 3px solid transparent;
-}
-
-.box.type-1:hover {
-    transition: .5s;
-    filter: brightness(1.2);
-    border-color: var(--main-color);
-}
-
-.box.type-1:hover i,
-.box.type-1:hover p {
-    animation: bouncing 0.5s .3s;
-    color: var(--main-color);
-}
-
-.box.type-1 p,
-.box.type-1 i {
-    color: var(--white);
-    font-weight: bold;
-    transition: .5s;
-}
-
-.box.type-2 {
-    background-color: var(--background);
-}
-
-.box.type-2:hover {
-    transition: .5s;
-    background-color: var(--light-black);
-}
-
-.box i {
-    font-size: 60px;
 }
