@@ -1,67 +1,8 @@
-:root {
-    --primary-color-20: #00344D;
-    --primary-color-30: #004C6E;
-    --primary-color-80: #89CEFF;
-    --primary-color-90: #C9E6FF;
-
-    --secondary-color-20: #21323F;
-    --secondary-color-30: #384956;
-    --secondary-color-80: #B7C9D9;
-    --secondary-color-90: #D3E5F5;
-
-    --tertiary-color-20: #352B4B;
-    --tertiary-color-30: #4C4163;
-    --tertiary-color-80: #CEC0E8;
-    --tertiary-color-90: #EADDFF;
-
-    --surface-color: #191C1E;
-    --surface-color-1: #1F2529;
-    --surface-color-2: #222A30;
-    --surface-color-3: #253037;
-    --surface-color-4: #263139;
-    --surface-color-5: #29353E;
-
-    --surface-variant-30: #41474D;
-    --surface-variant-80: #C1C7CE;
-
-    --outline-color: #8B9198;
-}
-
-@font-face {
-    font-family: 'Satoshi';
-    src: url('/font/Satoshi-Regular.woff2') format('woff2'),
-        url('/font/Satoshi-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+@import url(/css/variables.css);
+@import url(/css/contact.css);
 
 * {
     font-family: 'Satoshi';
-}
-
-h1 {
-    font-size: 64px !important;
-}
-
-h2 {
-    font-size: 48px !important;
-}
-
-h3 {
-    font-size: 40px !important;
-}
-
-h4 {
-    font-size: 32px !important;
-}
-
-h5 {
-    font-size: 24px !important;
-}
-
-h6 {
-    font-size: 16px !important;
 }
 
 body {
@@ -70,10 +11,6 @@ body {
 
 .web-page {
     background-color: var(--surface-color);
-    color: var(--surface-variant-80);
-}
-
-.contact-title {
-    padding: 56px;
-    text-align: center;
+    color: var(--font-color);
+    letter-spacing: 1px;
 }
