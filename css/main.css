@@ -1,5 +1,5 @@
-@import url(../css/variables.css);
-@import url(../css/contact.css);
+@import url(./css/variables.css);
+@import url(./css/contact.css);
 
 * {
     font-family: 'Satoshi';
