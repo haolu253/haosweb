@@ -64,3 +64,14 @@ img {
     width: 100px;
     height: 30px;
 }
+
+/* Footer */
+@media screen and (max-width: 1024px) {
+    .contact-form {
+        padding: 32px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+}
