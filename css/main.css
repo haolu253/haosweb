@@ -78,21 +78,27 @@ body {
     margin: 0 0 24px 0;
 }
 
-.footer a {
+.footer p {
     font-weight: 400;
     color: var(--surface-variant-80);
-    text-decoration: none;
     transition: .5s;
 }
 
-.footer a:hover {
+.footer-navigate {
+    cursor: pointer;
+    width: fit-content;
+}
+
+.footer-navigate:hover {
     color: var(--primary-color-80);
 }
 
-.footer p {
+.footer-content {
     margin-top: 24px;
-    font-weight: 400;
-    color: var(--surface-variant-80);
+}
+
+.footer-content:hover {
+    color: unset;
 }
 
 .navigate {
