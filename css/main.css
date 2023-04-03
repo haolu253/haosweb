@@ -17,10 +17,13 @@ body {
 .web-page {
     background-color: var(--surface-color);
     color: var(--font-color);
-    letter-spacing: 1px;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
+}
+
+.web-content {
+    min-height: 100vh;
 }
 
 .section-fade {
@@ -130,6 +133,19 @@ body {
     gap: 12px;
 }
 
+/* Footer */
+@media screen and (max-width: 1024px) {
+    .footer {
+        padding: 40px 32px;
+        flex-direction: column;
+        gap: 48px
+    }
+
+    .footer > div {
+        width: 100%;
+    }
+}
+
 .copy-right {
     padding: 16px 160px;
     font-weight: 400;
@@ -138,4 +154,11 @@ body {
 
 .copy-right p {
     margin: 0;
+}
+
+/* Copyright */
+@media screen and (max-width: 1024px) {
+    .copy-right {
+        padding: 16px 32px;
+    }
 }
