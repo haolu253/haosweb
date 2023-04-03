@@ -29,3 +29,7 @@ $('.contact-section-show').on('click', function () {
     $('.contact-section').addClass('show-section').removeClass('hidden-section');
   }, 300);
 })
+
+$('.burger-menu').on('click', function () {
+  $('.burger-icon').toggleClass('active');
+})
