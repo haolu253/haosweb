@@ -23,6 +23,20 @@ body {
     font-weight: 700;
 }
 
+.section-fade {
+    animation: fade .3s linear;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 .show-section {
     display: block !important;
 }
