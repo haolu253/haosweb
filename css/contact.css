@@ -26,7 +26,7 @@
 
 .contact-textarea {
     width: 100%;
-    height: 141px !important;
+    height: 141px;
     border-radius: 16px !important;
     padding: 16px 14px !important;
     background-color: var(--surface-variant-30) !important;

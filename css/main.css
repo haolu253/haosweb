@@ -5,6 +5,11 @@
     font-family: 'Satoshi';
 }
 
+::selection {
+    background-color: var(--primary-color-80);
+    color: var(--primary-color-20);
+}
+
 body {
     padding: 0 !important;
 }
@@ -51,9 +56,57 @@ body {
     border: 2px solid var(--font-color);
     padding: 16px 24px;
     border-radius: 90px;
+    user-select: none;
 }
 
 .contact-button:hover {
     background-color: var(--font-color);
     color: var(--surface-color) !important;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 160px;
+}
+
+.footer > div {
+    width: 20%;
+}
+
+.footer h5 {
+    margin: 0 0 24px 0;
+}
+
+.footer a {
+    font-weight: 400;
+    color: var(--surface-variant-80);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.footer a:hover {
+    color: var(--primary-color-80);
+}
+
+.footer p {
+    margin-top: 24px;
+    font-weight: 400;
+    color: var(--surface-variant-80);
+}
+
+.navigate {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.copy-right {
+    padding: 16px 160px;
+    font-weight: 400;
+    color: var(--surface-variant-80);
+}
+
+.copy-right p {
+    margin: 0;
 }
