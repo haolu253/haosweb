@@ -23,9 +23,18 @@ body {
     font-weight: 700;
 }
 
+.show-section {
+    display: block !important;
+}
+
+.hidden-section {
+    display: none !important;
+}
+
 .logo {
     width: 135px;
     height: 25px;
+    cursor: pointer;
 }
 
 .navbar {
@@ -42,13 +51,13 @@ body {
     gap: 48px;
 }
 
-.menu a {
-    text-decoration: none;
+.menu p {
     color: var(--font-color);
     transition: .5s;
+    cursor: pointer;
 }
 
-.menu a:hover {
+.menu p:hover {
     color: var(--primary-color-80);
 }
 

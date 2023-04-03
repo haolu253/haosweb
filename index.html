@@ -20,17 +20,29 @@
         <!-- Navbar -->
         <section>
             <div class="navbar">
-                <img class="logo" src="./img/logo.png" alt="">
+                <img class="logo home-section-show" src="./img/logo.png" alt="">
                 <div class="menu">
-                    <a href="#">About</a>
-                    <a href="#">Projects</a>
-                    <a href="#" class="contact-button">Contact</a>
+                    <p class="about-section-show">About</p>
+                    <p class="projects-section-show">Projects</p>
+                    <p class="contact-button contact-section-show">Contact</p>
                 </div>
             </div>
         </section>
 
+        <!-- Home -->
+        <section class="section home-section show-section">
+        </section>
+
+        <!-- About -->
+        <section class="section about-section hidden-section">
+        </section>
+
+        <!-- Projects -->
+        <section class="section projects-section hidden-section">
+        </section>
+
         <!-- Contact -->
-        <section>
+        <section class="section contact-section hidden-section">
             <div class="contact">
                 <div class="contact-title">
                     <h1>Contact</h1>
@@ -59,16 +71,16 @@
         <section>
             <div class="footer">
                 <div>
-                    <img class="logo" src="./img/logo.png" alt="">
+                    <img class="logo home-section-show" src="./img/logo.png" alt="">
                     <p class="footer-content">Web developer based in Ho Chi Minh City, creating enjoyable web experience.</p>
                 </div>
                 <div>
                     <h5>Navigate</h5>
                     <div class="navigate">
-                        <p class="footer-navigate">Home</p>
-                        <p class="footer-navigate">About</p>
-                        <p class="footer-navigate">Projects</p>
-                        <p class="footer-navigate">Contact</p>
+                        <p class="footer-navigate home-section-show">Home</p>
+                        <p class="footer-navigate about-section-show">About</p>
+                        <p class="footer-navigate projects-section-show">Projects</p>
+                        <p class="footer-navigate contact-section-show">Contact</p>
                     </div>
                 </div>
                 <div>
@@ -101,6 +113,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
