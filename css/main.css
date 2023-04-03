@@ -17,3 +17,43 @@ body {
     line-height: 16px;
     font-weight: 700;
 }
+
+.logo {
+    width: 135px;
+    height: 25px;
+}
+
+.navbar {
+    padding: 40px 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--font-color);
+    transition: .5s;
+}
+
+.menu a:hover {
+    color: var(--primary-color-80);
+}
+
+.contact-button {
+    border: 2px solid var(--font-color);
+    padding: 16px 24px;
+    border-radius: 90px;
+}
+
+.contact-button:hover {
+    background-color: var(--font-color);
+    color: var(--surface-color) !important;
+}
