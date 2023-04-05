@@ -164,6 +164,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 80px 160px;
+    background-color: var(--surface-color-2);
 }
 
 .footer>div {
@@ -238,6 +239,7 @@ body {
     padding: 16px 160px;
     font-weight: 400;
     color: var(--surface-variant-80);
+    background-color: var(--surface-color-2);
 }
 
 .copy-right p {
