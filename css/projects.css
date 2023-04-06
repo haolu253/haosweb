@@ -2,6 +2,12 @@
     padding: 0 160px;
 }
 
+@media screen and (max-width: 1024px) {
+    .projects {
+        padding: 0 32px;
+    }
+}
+
 .projects h2 {
     padding: 64px 0;
 }
