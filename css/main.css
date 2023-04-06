@@ -1,5 +1,6 @@
 @import url(../css/variables.css);
 @import url(../css/contact.css);
+@import url(../css/projects.css);
 
 * {
     font-family: 'Satoshi';
@@ -251,4 +252,9 @@ body {
     .copy-right {
         padding: 16px 32px;
     }
+}
+
+.title {
+    padding: 56px;
+    text-align: center;
 }
