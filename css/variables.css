@@ -88,3 +88,18 @@ h6 {
 .p3 {
     font-size: 1rem !important;
 }
+
+.prose1 {
+    font-size: 1.5rem !important;
+    line-height: 160%;
+}
+
+.prose2 {
+    font-size: 1.25rem !important;
+    line-height: 160%;
+}
+
+.prose3 {
+    font-size: 1rem !important;
+    line-height: 160%;
+}
