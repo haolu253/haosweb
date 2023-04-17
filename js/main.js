@@ -32,4 +32,5 @@ $('.contact-section-show').on('click', function () {
 
 $('.burger-menu').on('click', function () {
   $('.burger-icon').toggleClass('active');
+  $('.mb-menu').toggleClass('hidden-section');
 })
