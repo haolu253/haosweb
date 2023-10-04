@@ -69,15 +69,19 @@ body {
     gap: 48px;
 }
 
-.menu p {
+.menu a {
     color: var(--font-color);
     transition: .5s;
-
+    text-decoration: none;
     cursor: pointer;
 }
 
-.menu p:hover {
-    color: var(--primary-color-80);
+.menu a:hover {
+    color: var(--primary-color-80) !important;
+}
+
+.menu a.active {
+    color: var(--primary-color-80) !important;
 }
 
 .contact-button {
@@ -87,7 +91,12 @@ body {
     user-select: none;
 }
 
-.contact-button:hover {
+a.contact-button:hover {
+    background-color: var(--font-color);
+    color: var(--surface-color) !important;
+}
+
+a.contact-button.active {
     background-color: var(--font-color);
     color: var(--surface-color) !important;
 }
