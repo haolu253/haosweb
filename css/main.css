@@ -1,6 +1,7 @@
 @import url(../css/variables.css);
 @import url(../css/contact.css);
 @import url(../css/projects.css);
+@import url(../css/home.css);
 
 * {
     font-family: 'Satoshi';
@@ -9,6 +10,10 @@
 ::selection {
     background-color: var(--primary-color-80);
     color: var(--primary-color-20);
+}
+
+.text-primary {
+    color: var(--primary-color-80) !important;
 }
 
 body {
@@ -47,6 +52,28 @@ body {
 
 .hidden-section {
     display: none !important;
+}
+
+.primary-button {
+    background-color: var(--primary-color-80);
+    color: var(--primary-color-20) !important;
+    border-radius: 90px;
+    border: none !important;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    transition: all .5s;
+    cursor: pointer;
+    user-select: none;
+    padding: 12px 24px;
+    text-decoration: none !important;
+}
+
+.primary-button:hover,
+.primary-button:focus,
+.primary-button:active {
+    background-color: var(--primary-color-30);
+    color: var(--primary-color-90) !important;
 }
 
 .logo {
@@ -203,6 +230,7 @@ a.contact-button.active {
 
 .footer h5 {
     margin: 0 0 24px 0;
+    color: var(--primary-color-80)
 }
 
 .footer p,

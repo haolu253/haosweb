@@ -1,0 +1,43 @@
+.intro-section {
+    display: flex;
+    padding: 56px 160px;
+}
+
+@media screen and (max-width: 1024px) {
+    .intro-section {
+        display: block;
+        padding: 40px 32px;
+    }
+}
+
+.intro-section img {
+    width: auto;
+    height: 100%;
+    max-height: 300px;
+}
+
+.intro-section h1 {
+    margin-bottom: 64px;
+}
+
+@media screen and (max-width: 1024px) {
+    .intro-section h1 {
+        margin-bottom: 40px;
+    }
+}
+
+.intro-section p {
+    color: var(--surface-variant-80);
+}
+
+.intro-section .image-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1024px) {
+    .intro-section .image-container {
+        display: block;
+        margin-top: 64px;
+    }
+}

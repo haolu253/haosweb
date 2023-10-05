@@ -43,25 +43,6 @@
 .submit-button {
     width: 100% !important;
     height: 48px;
-    background-color: var(--primary-color-80);
-    color: var(--primary-color-20);
-    border-radius: 90px;
-    border: none !important;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
-    transition: .5s;
-}
-
-.submit-button:hover {
-    background-color: var(--button-hover);
-    filter: brightness(1.1);
-}
-
-.submit-button:focus,
-.submit-button:active {
-    background-color: var(--primary-color-30);
-    color: var(--primary-color-90);
 }
 
 img {
