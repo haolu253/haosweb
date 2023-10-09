@@ -1,9 +1,9 @@
+.contact-section {
+    padding: 0;
+}
+
 .contact-form {
     background-color: var(--surface-color-1);
-    background-image: url(../img/contact.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     padding: 80px;
 }
 

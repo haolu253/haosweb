@@ -315,3 +315,14 @@ a.contact-button.active {
     padding: 56px;
     text-align: center;
 }
+
+/* Section */
+section {
+    padding: 56px 160px;
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 40px 32px;
+    }
+}
