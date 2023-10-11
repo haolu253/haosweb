@@ -7,7 +7,7 @@ $(document).ready(function () {
     }, 5000);
 
     setTimeout(function () {
-        var canvas = document.getElementById('world');
+        var canvas = document.getElementById('fruitbasket');
         var engine = Matter.Engine.create();
         var world = engine.world;
         var render = Matter.Render.create({
