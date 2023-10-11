@@ -24,7 +24,7 @@ $(document).ready(function () {
         });
 
         var squares = [];
-        var textures = ['../img/fruit1.png', '../img/fruit2.png', '../img/fruit3.png', '../img/fruit4.png', '../img/fruit5.png'];
+        var textures = ['img/fruit1.png', 'img/fruit2.png', 'img/fruit3.png', 'img/fruit4.png', 'img/fruit5.png'];
         var dropInterval = 200;
         var currentSquareIndex = 0;
 
