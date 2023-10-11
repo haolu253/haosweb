@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     setTimeout(function () {
         $('.mam-fade').fadeOut(1000);
         $('.mam-logo').removeClass('d-none');
