@@ -16,6 +16,9 @@
 
 <body>
     <div class="mam-container">
+        <svg class="semi">
+            <path d="M 98,93 L 169,93 C 169,54 137,22 98,22 C 59,22 27,54 27,93 L 98,93 z " />
+          </svg>
         <div class="video-container">
             <video src="./img/Mam_08.mp4" autoplay loop muted></video>
         </div>
@@ -23,10 +26,12 @@
         <img class="mam-logo d-none" src="./img/Mam-logo.png" alt="" srcset="">
         <img class="mam-logo-gif" src="./img/MAM_Logo_White.gif" alt="" srcset="">
         <p class="harvest">HARVESTING SOON</p>
+        <canvas id="world"></canvas>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.10.0/matter.min.js"></script>
 </body>
