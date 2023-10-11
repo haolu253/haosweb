@@ -1,52 +1,65 @@
-.projects {
-    padding: 0 160px;
-}
-
-@media screen and (max-width: 1024px) {
-    .projects {
-        padding: 0 32px;
-    }
-}
-
-.projects h2 {
-    padding: 64px 0;
-}
-
-.projects-container {
-    padding-bottom: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    flex-direction: column;
-}
-
-.project {
-    display: flex;
-    gap: 32px;
+.mam-container,
+.mam-fade {
     width: 100%;
-}
-
-.project .image {
-    background-color: black;
-    flex-basis: 60%;
-    max-width: 60%;
-    min-height: 360px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.project-summary {
-    flex-basis: 40%;
-    max-width: 40%;
+.mam-container {
+    position: relative;
 }
 
-.project-detail {
-    margin-top: 24px;
+.mam-fade {
+    background-color: #7AC043;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
 }
 
-.project-detail p {
-    font-weight: 400;
-    color: var(--surface-variant-80);
+.mam-logo-gif {
+    width: 346px;
+    height: 221px;
+    position: absolute;
+    z-index: 3;
 }
+
+.harvest {
+    padding: 0 15px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31.47px;
+    letter-spacing: 6.4px;
+    position: absolute;
+    z-index: 3;
+    bottom: 20px;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+  }
+
+  .video-container video {
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%; 
+    min-height: 100%; 
+  
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+  
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
