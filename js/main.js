@@ -22,63 +22,57 @@ $(document).ready(function () {
                 frameRate: 60
             }
         });
-
-        var squares = [];
-        var textures = ['img/fruit1.png', 'img/fruit2.png', 'img/fruit3.png', 'img/fruit4.png', 'img/fruit5.png'];
-        var dropInterval = 200;
-        var currentSquareIndex = 0;
-
-        function createSquare() {
-            if (currentSquareIndex < textures.length) {
-                var texture = textures[currentSquareIndex];
-                var squareSize = 100;
-
-                var img = new Image();
-                img.onload = function () {
-                    var textureWidth = img.width;
-                    var textureHeight = img.height;
-
-                    var square = Matter.Bodies.rectangle(
-                        Math.random() * window.innerWidth,
-                        -10,
-                        squareSize,
-                        squareSize * (textureHeight / textureWidth),
-                        {
-                            density: 0.04,
-                            friction: 0.01,
-                            frictionAir: 0.00001,
-                            restitution: 0.8,
-                            render: {
-                                sprite: {
-                                    texture: texture,
-                                    fillStyle: '#F35e66',
-                                    strokeStyle: 'transparent',
-                                    lineWidth: 1
-                                }
+        
+        var circles = [];
+        
+            var textures = ['img/fruit1.png', 'img/fruit2.png', 'img/fruit3.png', 'img/fruit4.png', 'img/fruit5.png'];
+            var circleRadius = 50;
+        
+        var dropInterval = 300;
+        var currentCircleIndex = 0;
+        
+        function createCircle() {
+            if (currentCircleIndex < textures.length) {
+                var texture = textures[currentCircleIndex];
+                var circle = Matter.Bodies.circle(
+                    Math.random() * window.innerWidth,
+                    -10,
+                    circleRadius,
+                    {
+                        density: 0.5,
+                        friction: 0.05,
+                        frictionAir: 0.001,
+                        restitution: 0.3,
+                        render: {
+                            sprite: {
+                                texture: texture,
+                                xScale: 0.5, // Scale down the texture
+                                yScale: 0.5, // Scale down the texture
+                                fillStyle: '#F35e66',
+                                strokeStyle: 'transparent',
+                                lineWidth: 1
                             }
                         }
-                    );
-
-                    Matter.Body.setVelocity(square, { x: 0, y: 22 });
-                    squares.push(square);
-                    Matter.World.add(world, square);
-                    currentSquareIndex++;
-                    setTimeout(createSquare, dropInterval);
-                };
-
-                img.src = texture;
+                    }
+                );
+        
+                Matter.Body.setVelocity(circle, { x: 0, y: 13 });
+                circles.push(circle);
+                Matter.World.add(world, circle);
+                currentCircleIndex++;
+                setTimeout(createCircle, dropInterval);
             }
         }
-
-        createSquare();
-
+        
+        createCircle();
+        
         var wallOptions = {
             isStatic: true,
             render: {
                 visible: false
             }
         };
-
+        
         var boundaries = [
             Matter.Bodies.rectangle(window.innerWidth / 2, -10, window.innerWidth, 20, wallOptions), // Top wall
             Matter.Bodies.rectangle(window.innerWidth / 2, window.innerHeight + 10, window.innerWidth, 20, wallOptions), // Bottom wall
@@ -86,17 +80,23 @@ $(document).ready(function () {
             Matter.Bodies.rectangle(window.innerWidth + 10, window.innerHeight / 2, 20, window.innerHeight, wallOptions) // Right wall
         ];
         Matter.World.add(world, boundaries);
-
-        var mouseConstraint = Matter.MouseConstraint.create(engine, {
-            element: canvas,
-            constraint: {
-                render: {
-                    visible: false
-                },
-                stiffness: 0.8
+        
+        // Make the circles bounce on hover
+        canvas.addEventListener('mousemove', function (event) {
+            var mousePosition = Matter.Mouse.getMousePosition(mouseConstraint.mouse);
+        
+            for (var i = 0; i < circles.length; i++) {
+                var circle = circles[i];
+                var distance = Matter.Vector.magnitude(Matter.Vector.sub(circle.position, mousePosition));
+        
+                if (distance < circleRadius) {
+                    // Apply upward force when the mouse is over a circle
+                    Matter.Body.applyForce(circle, circle.position, { x: 0, y: -0.1 });
+                }
             }
         });
-        Matter.World.add(world, mouseConstraint);
+        
+        // Start the engine
         Matter.Engine.run(engine);
         Matter.Render.run(render);
     }, 5100);
