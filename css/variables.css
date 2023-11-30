@@ -1,56 +1,86 @@
 :root {
-    --color-primary: #0F1537;
+    --primary-color-20: #00344D;
+    --primary-color-30: #004C6E;
+    --primary-color-80: #89CEFF;
+    --primary-color-90: #C9E6FF;
 
+    --secondary-color-20: #21323F;
+    --secondary-color-30: #384956;
+    --secondary-color-80: #B7C9D9;
+    --secondary-color-90: #D3E5F5;
 
-    --color-header-gradient-1: #00C4FEE3;
-    --color-header-gradient-2: #01052D62;
+    --tertiary-color-20: #690005;
+    --tertiary-color-30: #93000A;
+    --tertiary-color-80: #FFB4AB;
+    --tertiary-color-90: #FFDAD6;
 
-    --color-active: #CA22E9;
-    --color-white: #fff;
+    --surface-color: #191C1E;
+    --surface-color-1: #1F2529;
+    --surface-color-2: #222A30;
+    --surface-color-3: #253037;
+    --surface-color-4: #263139;
+    --surface-color-5: #29353E;
 
-    --header-font: 'Sarabun Medium';
+    --surface-variant-30: #41474D;
+    --surface-variant-80: #C1C7CE;
+
+    --outline-color: #8B9198;
+    --font-color: #E2E2E5;
+    --button-hover: #9ED7FF;
 }
 
 @font-face {
-    font-family: 'Sarabun Medium';
-    src: url('../font/Sarabun-Medium.woff2') format('woff2'),
-        url('../font/Sarabun-Medium.woff') format('woff');
+    font-family: 'Satoshi';
+    src: url('../font/Satoshi-Regular.woff2') format('woff2'),
+        url('../font/Satoshi-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'BenzGrotesk';
-    src: url('../font/BenzGrotesk-Heavy.woff2') format('woff2'),
-        url('../font/BenzGrotesk-Heavy.woff') format('woff');
+    font-family: 'Satoshi Bold';
+    src: url('../font/Satoshi-Bold.woff2') format('woff2'),
+        url('../font/Satoshi-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 h1 {
-    font-size: 60px !important;
+    font-size: 4rem !important;
 }
 
 h2 {
-    font-size: 50px !important;
+    font-size: 3rem !important;
 }
 
 h3 {
-    font-size: 30px !important;
+    font-size: 2.5rem !important;
 }
 
 h4 {
-    font-size: 25px !important;
+    font-size: 2rem !important;
 }
 
 h5 {
-    font-size: 20px !important;
+    font-size: 1.5rem !important;
 }
 
 h6 {
-    font-size: 20px !important;
+    font-size: 1rem !important;
+}
+
+.p1 {
+    font-size: 1.5rem !important;
+}
+
+.p2 {
+    font-size: 1.25rem !important;
+}
+
+.p3 {
+    font-size: 1rem !important;
 }
 
 h1,
@@ -59,10 +89,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'BenzGrotesk';
+    font-family: 'Satoshi Bold';
     margin-top: 0;
     line-height: 120% !important;
-    color: var(--color-white);
 }
 
 @media screen and (max-width: 1024px) {
@@ -75,15 +104,15 @@ h6 {
     }
 
     h3 {
-        font-size: 25px !important;
+        font-size: 32px !important;
     }
 
     h4 {
-        font-size: 20px !important;
+        font-size: 28px !important;
     }
 
     h5 {
-        font-size: 16px !important;
+        font-size: 24px !important;
     }
 
     h6 {
@@ -91,15 +120,9 @@ h6 {
     }
 }
 
-
-p {
-    font-size: 20px !important;
-    line-height: 140%;
-}
-
-
-@media screen and (max-width: 1023px) {
-    p {
-        font-size: 16px !important;
-    }
+.p1,
+.p2,
+.p3 {
+    line-height: 160% !important;
+    margin-top: 0;
 }
