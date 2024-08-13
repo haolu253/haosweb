@@ -46,14 +46,19 @@ section {
 
 .tech-grid {
     display: flex;
+    flex-wrap: wrap;
     padding: 64px 0 0;
     gap: 50px;
+}
+
+.tech-grid svg {
+    width: 80px;
+    height: 80px;
 }
 
 @media screen and (max-width: 768px) {
     .tech-grid {
         display: flex;
-        flex-wrap: wrap;
         padding: 55px 0 0;
         gap: 30px;
         justify-content: space-between;
